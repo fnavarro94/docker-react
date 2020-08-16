@@ -2,10 +2,10 @@ FROM node:alpine
 
 WORKDIR '/app'
 
-COPY package.json .
+COPY package.json ./
 RUN npx create-react-app frontend
 RUN ls frontend/
-RUN mv   frontend/* .
+RUN mv   frontend/* ./
 RUN ls
 RUN rm -rf frontend
 
